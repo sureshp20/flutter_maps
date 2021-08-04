@@ -414,15 +414,15 @@ class _MapViewState extends State<MapView> {
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: <Widget>[
-                          Text(
+                          const Text(
                             'Places',
                             style: TextStyle(fontSize: 20.0),
                           ),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           _textField(
                               label: 'Start',
                               hint: 'Choose starting point',
-                              prefixIcon: Icon(Icons.looks_one),
+                              prefixIcon: const Icon(Icons.looks_one),
                               suffixIcon: IconButton(
                                 icon: Icon(Icons.my_location),
                                 onPressed: () {
@@ -438,7 +438,7 @@ class _MapViewState extends State<MapView> {
                                   _startAddress = value;
                                 });
                               }),
-                          SizedBox(height: 10),
+                          const SizedBox(height: 10),
                           _textField(
                               label: 'Destination',
                               hint: 'Choose destination',
